@@ -1,9 +1,0 @@
-{
-    "domain": "pfzone",
-    "name": "HA Urls Monitor",
-    "version": "0.0.1",
-    "documentation": "https://baltig.o.pfzone.net/pfzone/home-assistant/urls-monitor",
-    "dependencies": [],
-    "codeowners": ["@pfzone"],
-    "requirements": ["requests"]
-}
