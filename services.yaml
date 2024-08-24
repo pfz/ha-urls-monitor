@@ -1,0 +1,9 @@
+check_content_change:
+  description: "Check content change for monitored URLs"
+  fields:
+    urls:
+      description: "List of URLs to monitor"
+      example: "https://www.example.com;User-Agent:Mozilla/5.0;Accept:text/html\nhttps://www.anotherexample.com;User-Agent:Mozilla/5.0;Accept:text/html"
+      selector:
+        text:
+          multiline: true
