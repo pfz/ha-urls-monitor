@@ -1,38 +1,44 @@
 {
-  "config": {
-      "abort": {
-          "already_configured": "Device is already configured"
-      },
-      "error": {
-          "cannot_connect": "Failed to connect",
-          "invalid_headers": "Headers must be in key:value format separated by |",
-          "invalid_url": "Invalid URL format"
-      },
-      "options": {
-          "step": {
-              "init": {
-                  "data": {
-                      "headers": "Request headers (key:value|key:value)",
-                      "interval": "Fetch interval (seconds)",
-                      "timeout": "Timeout (seconds)",
-                      "url": "URL to monitor"
-                  },
-                  "description": "Adjust the settings for URL monitoring.",
-                  "title": "Options for URL monitor"
-              }
-          }
-      },
-      "step": {
-          "user": {
-              "data": {
-                  "headers": "Request headers (key:value|key:value)",
-                  "interval": "Fetch interval (seconds)",
-                  "timeout": "Timeout (seconds)",
-                  "url": "URL to monitor"
-              },
-              "description": "Monitor content updates for a specific URL.",
-              "title": "Set up URL monitor"
-          }
-      }
-  }
+    "config": {
+        "abort": {
+            "already_configured": "Device is reconfigured"
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "invalid_headers": "Headers must be in key:value format separated by |",
+            "invalid_url": "Invalid URL format"
+        },
+        "step": {
+            "init": {
+                "title": "Options for URL monitor",
+                "description": "Adjust the settings for URL monitoring.",
+                "data": {
+                    "headers": "Request headers (key:value|key:value)",
+                    "interval": "Fetch interval (seconds)",
+                    "timeout": "Timeout (seconds)",
+                    "url": "URL to monitor"
+                }
+            },
+            "user": {
+                "title": "Configure URL Monitoring",
+                "description": "Set up the parameters for monitoring a URL.",
+                "data": {
+                    "url": "URL",
+                    "headers": "HTTP Headers (optional)",
+                    "interval": "Check Interval (seconds)",
+                    "timeout": "Timeout (seconds)"
+                }
+            },
+            "reconfigure": {
+                "title": "Reconfigure URL Monitoring",
+                "description": "Update the parameters for monitoring a URL.",
+                "data": {
+                    "url": "URL",
+                    "headers": "HTTP Headers (optional)",
+                    "interval": "Check Interval (seconds)",
+                    "timeout": "Timeout (seconds)"
+                }
+            }
+        }
+    }
 }
